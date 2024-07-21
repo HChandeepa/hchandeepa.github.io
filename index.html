@@ -488,40 +488,40 @@ html {
 <!-- Contact Me Section -->
 <section id="contact" class="contact-section text-center text-white bg-dark py-5">
   <div class="container">
-    <h2 class="mb-4">Contact Me</h2>
+    <h2 class="mb-5">Contact Me</h2>
     
-    <div class="row mb-4">
-      <div class="col-lg-6">
+    <div class="row mb-5">
+      <div class="col-lg-6 mb-3 mb-lg-0">
         <p class="d-flex align-items-center justify-content-center">
-          <i class="fas fa-envelope fa-2x me-2"></i>
+          <i class="fas fa-envelope fa-2x me-3"></i>
           <a href="mailto:hchandeepap@gmail.com" class="text-white text-decoration-none">📧 hchandeepap@gmail.com</a>
         </p>
       </div>      
       <div class="col-lg-6">
         <p class="d-flex align-items-center justify-content-center">
-          <i class="fas fa-phone fa-2x me-2"></i>
+          <i class="fas fa-phone fa-2x me-3"></i>
           <a href="tel:+94740321264" class="text-white text-decoration-none">☎ +94740321264</a>
         </p>
       </div>      
     </div>
     
-    <div class="row mb-4">
-      <div class="col-lg-3 col-md-6 mb-3">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
         <a href="https://www.linkedin.com/in/heshan-chandeepa-45a574252/" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mb-2" style="width: 40px; height: 40px;">
-          LinkedIn
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mb-2" style="width: 50px; height: 50px;">
+          <span>LinkedIn</span>
         </a>
       </div>
-      <div class="col-lg-3 col-md-6 mb-3">
+      <div class="col-lg-4 col-md-6 mb-4">
         <a href="https://twitter.com/hchandeepap" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
-          <img src="icons/twitter.png" alt="Twitter" class="social-icon mb-2" style="width: 40px; height: 40px;">
-          Twitter
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon mb-2" style="width: 50px; height: 50px;">
+          <span>Twitter</span>
         </a>
       </div>
-      <div class="col-lg-3 col-md-6 mb-3">
+      <div class="col-lg-4 col-md-6 mb-4">
         <a href="https://github.com/HChandeepa" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
-          <img src="icons/github.png" alt="GitHub" class="social-icon mb-2" style="width: 40px; height: 40px;">
-          GitHub
+          <img src="icons/github.png" alt="GitHub" class="social-icon mb-2" style="width: 50px; height: 50px;">
+          <span>GitHub</span>
         </a>
       </div>
     </div>
@@ -531,16 +531,19 @@ html {
 <style>
   .contact-section {
     background-color: #343a40;
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem;
+    border-top: 5px solid #f0f0f0;
   }
   
   .contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #f8f9fa;
+    margin-bottom: 3rem;
   }
 
   .contact-section p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin: 0;
   }
 
@@ -548,6 +551,12 @@ html {
     width: 50px;
     height: 50px;
     object-fit: contain;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .contact-section .social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
   .contact-section .text-white a {
@@ -556,15 +565,16 @@ html {
   }
 
   .contact-section .text-white a:hover {
-    color: #f0f0f0;
+    color: #e9ecef;
   }
   
   @media (max-width: 767px) {
     .contact-section h2 {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
   }
 </style>
+
 
 <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
