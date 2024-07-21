@@ -143,11 +143,45 @@ html {
   }
 }
 
+/* Marquee */
+.marquee-section {
+  background-color: #343a40; /* Adjust background color as needed */
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  position: absolute;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Marquee end */
 
 </style>
 
 </head>
 <body>
+
+
+<section class="marquee-section">
+  <div class="marquee">
+      I'm a Data Science undergraduate | Developer | Researcher
+  </div>
+</section>
+  
 
 <section id='about' class="about-section">
   <div class="container">
@@ -160,7 +194,7 @@ html {
       fields of Data Science, Machine Learning, and Artificial Intelligence. I can manage risks
       and fulfill responsibilities effectively both as a team worker and individually. My career
       objective is to leverage data-driven insights to pioneer visionary solutions that
-      contribute to a brighter future for humanity</p>
+      contribute to a brighter future for humanity.</p>
     <!-- <p>In addition to my technical prowess, I possess a keen eye for data analysis, visualization, and statistical inference. Leveraging advanced visualization tools and techniques, I transform raw data into compelling visual narratives that reveal insights and patterns effectively. My portfolio showcases a diverse range of projects where I've applied statistical analysis methodologies to solve real-world problems, demonstrating my ability to derive actionable insights from complex datasets. With a relentless pursuit of knowledge and a passion for innovation, I am poised to make meaningful contributions at the intersection of data science and machine learning.</p> -->
   </div>
 </section>
@@ -323,7 +357,7 @@ html {
 <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#home">Portfolio</a>
+    <a class="navbar-brand" href="#home">Heshan Chandeepa</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
