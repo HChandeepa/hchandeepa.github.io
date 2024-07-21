@@ -177,13 +177,15 @@ html {
 </head>
 <body>
 
+
   <section class="marquee-section">
     <div class="marquee">
         <b>I'm a Data Science Undergraduate &nbsp;&nbsp; | &nbsp;&nbsp;Developer &nbsp;&nbsp;| &nbsp;&nbsp;Researcher</b>
     </div>
   </section>
+    
 
-<section id="about" class="about-section">
+<section id='about' class="about-section">
   <div class="container">
     <h2>About</h2>
     <img src="images/about/1.jpg" alt="About Me">
@@ -201,7 +203,7 @@ html {
 
 
 <!-- Projects Section -->
-<section id="projects" class="projects-section bg-light">
+<section id="projects" class="projects-section bg-light" id="projects">
   <div class="container">
     <h2 class="text-center">Projects</h2>
     <div class="row">
@@ -248,43 +250,51 @@ html {
 
 
 <!-- Skills Section -->
-<section id="skills" class="skills-section">
+<section id="skills" class="skills-section bg-white" id="skills">
   <div class="container">
     <h2 class="text-center">Skills</h2>
     <div class="row">
-      <div class="col-md-3 mb-4">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
-          <img src="images/skills/tensorflow.png" class="card-img-top" alt="TensorFlow">
-          <div class="card-body">
-            <h5 class="card-title">TensorFlow</h5>
-            <p class="card-text">Proficient in building and deploying machine learning models using TensorFlow.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <img src="images/skills/javascript.png" class="card-img-top" alt="JavaScript">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text">Experienced in front-end development using JavaScript, React, and other frameworks.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="card">
-          <img src="images/skills/python.png" class="card-img-top" alt="Python">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
           <div class="card-body">
             <h5 class="card-title">Python</h5>
-            <p class="card-text">Skilled in data analysis, machine learning, and automation with Python.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 mb-4">
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
-          <img src="images/skills/react.png" class="card-img-top" alt="React">
+          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
           <div class="card-body">
-            <h5 class="card-title">React</h5>
-            <p class="card-text">Proficient in building dynamic user interfaces with React.</p>
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
           </div>
         </div>
       </div>
@@ -292,43 +302,80 @@ html {
   </div>
 </section>
 
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section bg-dark text-light">
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
   <div class="container">
-    <h2 class="text-center">Contact</h2>
-    <p class="text-center">Feel free to reach out to me via the following platforms:</p>
-    <div class="row justify-content-center">
-      <div class="col-md-2 text-center">
-        <a href="mailto:hchandeepap@gmail.com"><img src="images/contact/mail.png" class="social-icon" alt="Email"></a>
-        <p>Email</p>
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:10899186@students.plymouth.ac.uk">📧 hchandeepap@gmail.com</a></p>
+      </div>      
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> <a href="tel:+94740321264">☎ +94740321264</a></p>
+      </div>      
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
+        <a href="https://www.linkedin.com/in/heshan-chandeepa-45a574252/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
       </div>
-      <div class="col-md-2 text-center">
-        <a href="https://linkedin.com/in/heshan chandeepa-45a574252" target="_blank"><img src="images/contact/linkedin.png" class="social-icon" alt="LinkedIn"></a>
-        <p>LinkedIn</p>
+      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
+        <a href="https://twitter.com/hchandeepap" target="_blank">
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+          Twitter
+        </a>
       </div>
-      <div class="col-md-2 text-center">
-        <a href="https://github.com/HChandeepa" target="_blank"><img src="images/contact/github.png" class="social-icon" alt="GitHub"></a>
-        <p>GitHub</p>
+      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
+        <a href="https://github.com/HChandeepa" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
       </div>
+      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
+        <!-- Example of a link to your CV -->
+        <p><i class="fas fa-file-pdf"></i> <img src="icons/cv.jpg" alt="CV" class="social-icon"><a href="https://drive.google.com/file/d/1oufmSNAzendwj0XGvWQCNB_OBcNmCR41/view?usp=sharing" target="_blank">My CV</a></p>
+      </div>
+    </div>
+    
+      <!--<div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@yourusername" target="_blank">
+          <img src="icons/medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://youtube.com/c/yourchannel" target="_blank">
+          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
+          YouTube
+        </a>
+      </div>-->
     </div>
   </div>
 </section>
 
-<!-- Navbar -->
+<!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">My Portfolio</a>
+    <a class="navbar-brand" href="#home">Heshan Chandeepa</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Certifications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
@@ -342,10 +389,9 @@ html {
 </nav>
 
 
-<!-- Bootstrap JS -->
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
