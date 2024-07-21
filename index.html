@@ -486,58 +486,91 @@ html {
 
 
 <!-- Contact Me Section -->
-<section id="contact" class="contact-section text-center text-white bg-dark">
+<section id="contact" class="contact-section text-center text-white bg-dark py-5">
   <div class="container">
-    <h2>Contact Me</h2>
-    <div class="row">
+    <h2 class="mb-4">Contact Me</h2>
+    
+    <div class="row mb-4">
       <div class="col-lg-6">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:10899186@students.plymouth.ac.uk">📧 hchandeepap@gmail.com</a></p>
+        <p class="d-flex align-items-center justify-content-center">
+          <i class="fas fa-envelope fa-2x me-2"></i>
+          <a href="mailto:hchandeepap@gmail.com" class="text-white text-decoration-none">📧 hchandeepap@gmail.com</a>
+        </p>
       </div>      
       <div class="col-lg-6">
-        <p><i class="fas fa-phone"></i> <a href="tel:+94740321264">☎ +94740321264</a></p>
+        <p class="d-flex align-items-center justify-content-center">
+          <i class="fas fa-phone fa-2x me-2"></i>
+          <a href="tel:+94740321264" class="text-white text-decoration-none">☎ +94740321264</a>
+        </p>
       </div>      
     </div>
     
-    <div class="row">
-      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
-        <a href="https://www.linkedin.com/in/heshan-chandeepa-45a574252/" target="_blank">
-          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+    <div class="row mb-4">
+      <div class="col-lg-3 col-md-6 mb-3">
+        <a href="https://www.linkedin.com/in/heshan-chandeepa-45a574252/" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mb-2" style="width: 40px; height: 40px;">
           LinkedIn
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
-        <a href="https://twitter.com/hchandeepap" target="_blank">
-          <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+      <div class="col-lg-3 col-md-6 mb-3">
+        <a href="https://twitter.com/hchandeepap" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
+          <img src="icons/twitter.png" alt="Twitter" class="social-icon mb-2" style="width: 40px; height: 40px;">
           Twitter
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
-        <a href="https://github.com/HChandeepa" target="_blank">
-          <img src="icons/github.png" alt="GitHub" class="social-icon">
+      <div class="col-lg-3 col-md-6 mb-3">
+        <a href="https://github.com/HChandeepa" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
+          <img src="icons/github.png" alt="GitHub" class="social-icon mb-2" style="width: 40px; height: 40px;">
           GitHub
         </a>
       </div>
-      <div class="col-lg-3 col-md-3 mb-4"> <!-- Adjusted column size -->
-        <!-- Example of a link to your CV -->
-        <p><i class="fas fa-file-pdf"></i> <img src="icons/cv.jpg" alt="CV" class="social-icon"><a href="https://drive.google.com/file/d/1oufmSNAzendwj0XGvWQCNB_OBcNmCR41/view?usp=sharing" target="_blank">My CV</a></p>
-      </div>
-    </div>
-    
-      <!--<div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://medium.com/@yourusername" target="_blank">
-          <img src="icons/medium.png" alt="Medium" class="social-icon">
-          Medium
+      <div class="col-lg-3 col-md-6 mb-3">
+        <a href="https://drive.google.com/file/d/1oufmSNAzendwj0XGvWQCNB_OBcNmCR41/view?usp=sharing" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
+          <img src="icons/cv.jpg" alt="CV" class="social-icon mb-2" style="width: 40px; height: 40px;">
+          My CV
         </a>
       </div>
-      <div class="col-lg-2 col-md-4 mb-4">
-        <a href="https://youtube.com/c/yourchannel" target="_blank">
-          <img src="icons/youtube.png" alt="YouTube" class="social-icon">
-          YouTube
-        </a>
-      </div>-->
     </div>
   </div>
 </section>
+
+<style>
+  .contact-section {
+    background-color: #343a40;
+    padding: 3rem 1.5rem;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .contact-section .social-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .contact-section .text-white a {
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  .contact-section .text-white a:hover {
+    color: #f0f0f0;
+  }
+  
+  @media (max-width: 767px) {
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  }
+</style>
 
 <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
