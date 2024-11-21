@@ -205,6 +205,18 @@ html {
     background-color: #0056b3;
     border-color: #004085;
   }
+
+  /* Style the "ball" in front of the publication title */
+.publication-ball {
+  display: inline-block;
+  width: 20px;  /* Size of the ball */
+  height: 20px;
+  background-color: #888b8f;  /* Blue color for the ball */
+  border-radius: 50%;  /* Makes it circular */
+  margin-right: 15px;  /* Space between the ball and the title */
+  vertical-align: middle;  /* Aligns it vertically with the text */
+}
+
   
 </style>
 
@@ -233,10 +245,65 @@ html {
       <!-- <p>In addition to my technical prowess, I possess a keen eye for data analysis, visualization, and statistical inference. Leveraging advanced visualization tools and techniques, I transform raw data into compelling visual narratives that reveal insights and patterns effectively. My portfolio showcases a diverse range of projects where I've applied statistical analysis methodologies to solve real-world problems, demonstrating my ability to derive actionable insights from complex datasets. With a relentless pursuit of knowledge and a passion for innovation, I am poised to make meaningful contributions at the intersection of data science and machine learning.</p> -->
   
       <div class="text-center mt-4">
-        <a href="https://drive.google.com/file/d/1Wpdyle2jxazCJvC5F32F9X1ynvlTNSI7/view?usp=sharing" target="_blank" class="btn btn-primary">Download CV</a>
+        <a href="https://drive.google.com/file/d/1CcEBd9tkAeMAAT4VlcAc1NhSmiN63-mk/view?usp=sharing" target="_blank" class="btn btn-primary">Download CV</a>
       </div>
     </div>
   </section>
+  
+<!-- News Section -->
+
+  <section id="news" class="news-section bg-light py-5">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="news-content">
+            <!-- News Date and Content -->
+            <p class="text-muted" style="font-size: 18px;"><b>2024 October</b></p>
+            <p><strong>I presented & published my research, "Machine Learning Techniques for Predicting
+              Brain Stroke Risk: Addressing Data Imbalance" at ICACT 2024! 🌟</strong></p>
+            <p>This work explores how machine learning can tackle data imbalance challenges to improve stroke risk prediction.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Image next to the News -->
+          <img src="images\News\IMG-20241101-WA0002.jpg" alt="News Image" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications-section py-5">
+    <div class="container">
+      <h2>Publications</h2>
+  
+      <!-- 2024 Publications -->
+      <div class="year-section">
+        <h3>2024</h3>
+        <ul class="list-unstyled">
+          <li class="publication-item">
+            <p>
+              <!-- Ball before the title -->
+              <span class="publication-ball"></span> 
+              <strong>"Machine Learning Techniques for Predicting Brain Stroke Risk: Addressing Data Imbalance"</strong>
+              <span class="publication-date">Published: October 2024</span><br>
+              <small><em>Authors: L B H C Pathmakumara, R W K T Rajapaksha</em></small><br>
+              <small><em>Conference: International Conference on Advanced Computing Technologies (ICACT 2024)</em></small><br>
+              <a href="https://icact.nsbm.ac.lk/wp-content/uploads/2024/10/ICACT-Conference-Proceedings-2024-E-Book.pdf#page=40" target="_blank" class="publication-link">
+                <img src="icons/pdf-icon.png" alt="PDF Icon" class="publication-icon" style="width: 20px; height: 20px;" />
+              </a>
+            </p>
+          </li>
+          <!-- Add more publications here -->
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+  
+  
   
 
 
@@ -533,28 +600,36 @@ html {
         </p>
       </div>      
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-4 col-6 mb-4">
         <a href="https://www.linkedin.com/in/heshanchandeepa/" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
           <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon mb-2" style="width: 50px; height: 50px;">
           <span>LinkedIn</span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-3 col-md-4 col-6 mb-4">
         <a href="https://twitter.com/hchandeepap" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
           <img src="icons/twitter.png" alt="Twitter" class="social-icon mb-2" style="width: 50px; height: 50px;">
           <span>Twitter</span>
         </a>
       </div>
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-3 col-md-4 col-6 mb-4">
         <a href="https://github.com/HChandeepa" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
           <img src="icons/github.png" alt="GitHub" class="social-icon mb-2" style="width: 50px; height: 50px;">
           <span>GitHub</span>
         </a>
       </div>
+      <div class="col-lg-3 col-md-4 col-6 mb-4">
+        <a href="https://www.researchgate.net/profile/Heshan-Pathmakumara" target="_blank" class="text-decoration-none text-white d-flex flex-column align-items-center">
+          <img src="icons/researchgate.png" alt="ResearchGate" class="social-icon mb-2" style="width: 50px; height: 50px;">
+          <span>ResearchGate</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
+
+
 
 <style>
   .contact-section p a {
@@ -652,10 +727,16 @@ html {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#about">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#publications">Publications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
