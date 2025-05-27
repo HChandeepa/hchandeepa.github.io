@@ -150,32 +150,24 @@ html {
 
 /* Marquee */
 .marquee-section {
-  background-color: #343a40; /* Adjust background color as needed */
-  color: white;
-  padding: 20px 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 15s linear infinite;
-  position: absolute;
-  will-change: transform;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 15px; /* Adjust font size as needed */
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    overflow: hidden;
   }
-  to {
-    transform: translateX(-100%);
+
+  .marquee-text {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
   }
-}
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
 /* Marquee end */
 
 .about-section {
@@ -248,10 +240,12 @@ html {
 <body>
 
   <section class="marquee-section">
-    <div class="marquee">
-        <b>I'm a Data Science Undergraduate &nbsp;&nbsp; | &nbsp;&nbsp;Developer &nbsp;&nbsp;| &nbsp;&nbsp;Researcher</b>
+  <div class="container">
+    <div class="marquee-text">
+      I'm a Data Science Undergraduate &nbsp;&nbsp; | &nbsp;&nbsp; Developer &nbsp;&nbsp; | &nbsp;&nbsp; Researcher
     </div>
-  </section>
+  </div>
+</section>
     
 
   <section id='about' class="about-section">
