@@ -3,9 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heshan Chandeepa Pathmakumara | Research Portfolio</title>
+<title>Heshan Chandeepa Pathmakumara | AI Researcher | Biomedical Machine Learning</title>
+<meta name="description" content="AI Researcher specializing in biomedical machine learning, deep learning, and medical image analysis. Published researcher with expertise in CNNs, explainable AI, and healthcare applications.">
+<meta name="keywords" content="AI Researcher, Biomedical AI, Deep Learning, Medical Image Analysis, Machine Learning, Healthcare AI, Research, Publications">
 <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- Google Fonts - Academic Theme -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <!-- Font Awesome -->
@@ -17,119 +23,181 @@
 
 <style>
   :root {
-    --primary-color: #0d6efd;
+    --primary-color: #2c5aa0;
     --secondary-color: #6c757d;
-    --dark-bg: #121212;
-    --darker-bg: #0a0a0a;
-    --card-bg: #1e1e1e;
-    --text-color: #e9ecef;
-    --text-muted: #adb5bd;
-    --border-color: #343a40;
+    --accent-color: #4a7bc8;
+    --bg-color: #ffffff;
+    --section-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --text-muted: #6c757d;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 4px rgba(0,0,0,0.08);
+  }
+  
+  * {
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   
   body {
-    background-color: var(--dark-bg);
+    background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
     padding-top: 70px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.3;
   }
   
   .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
     position: relative;
     display: inline-block;
+    font-weight: 600;
+    letter-spacing: -0.5px;
   }
   
   .section-title::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
-    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
     height: 3px;
     background-color: var(--primary-color);
   }
   
   /* Navigation */
   .navbar {
-    background-color: rgba(10, 10, 10, 0.95) !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--border-color);
   }
   
   .navbar-brand {
-    font-weight: 700;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.3rem;
     color: var(--primary-color) !important;
+    letter-spacing: 0.5px;
   }
   
   .navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif;
     color: var(--text-color) !important;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 0.95rem;
     margin: 0 10px;
-    transition: color 0.3s;
+    transition: color 0.2s;
+    letter-spacing: 0.3px;
   }
   
   .navbar-nav .nav-link:hover {
     color: var(--primary-color) !important;
   }
   
-  /* Hero Section */
-  .hero-section {
-    background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
-    padding: 150px 0 100px;
-    position: relative;
-    overflow: hidden;
+  .navbar-toggler {
+    border-color: var(--border-color);
   }
   
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 30% 20%, rgba(13, 110, 253, 0.1) 0%, transparent 50%);
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(44, 90, 160, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: var(--bg-color);
+    padding: 80px 0 60px;
+    border-bottom: 1px solid var(--border-color);
   }
   
   .hero-content h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
   }
   
   .hero-content .lead {
-    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: var(--text-muted);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .hero-content p {
+    color: var(--text-color);
   }
   
   .profile-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
     object-fit: cover;
-    border: 5px solid var(--primary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
   }
   
   /* About Section */
   .about-section {
-    padding: 100px 0;
-    background-color: var(--darker-bg);
+    padding: 60px 0;
+    background-color: var(--section-bg);
+  }
+  
+  .about-section h4, .about-section h5 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+  }
+  
+  .about-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .card {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+  }
+  
+  .card-title {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .card-body {
+    color: var(--text-color);
   }
   
   /* News Section */
   .news-section {
-    padding: 100px 0;
+    padding: 60px 0;
+    background-color: var(--bg-color);
   }
   
   .news-container {
-    max-height: 500px;
+    max-height: 400px;
     overflow-y: auto;
-    padding-right: 15px;
+    padding-right: 10px;
   }
   
   .news-container::-webkit-scrollbar {
@@ -143,48 +211,109 @@
   
   .news-item {
     background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-left: 4px solid var(--primary-color);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
   }
   
-  .news-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .news-item .row {
+    margin: 0;
+  }
+  
+  .news-item .col-md-8, .news-item .col-md-4 {
+    padding: 0 10px;
   }
   
   .news-date {
+    font-family: 'Lato', sans-serif;
     color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-item h4 {
+    font-family: 'Lora', Georgia, serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  
+  .news-item p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-item img {
+    max-width: 100%;
+    height: auto;
   }
 
 
   /* Experience Section Styles */
 .experience-section {
-  padding: 80px 0;
-  background-color: var(--darker-bg);
+  padding: 60px 0;
+  background-color: var(--section-bg);
 }
 
-.experience-card {
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  padding: 30px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+  .experience-card {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+  }
+  
+  .experience-card .d-flex {
+    margin-bottom: 1rem !important;
+  }
+  
+  .experience-card img {
+    max-height: 45px !important;
+    margin-right: 1rem !important;
+  }
+  
+  .experience-card h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .experience-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .experience-card li {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+  
+  .experience-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+  }
 
-.experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.skills-summary {
-  background-color: rgba(13, 110, 253, 0.08);
-  border-radius: 8px;
-  padding: 20px;
-}
+  .skills-summary {
+    background-color: var(--section-bg);
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+  }
 
 .skills-summary h4 {
   color: var(--primary-color);
@@ -213,38 +342,98 @@
   
   /* Education Section */
   .education-section {
-    padding: 100px 0;
-    background-color: var(--darker-bg);
+    padding: 60px 0;
+    background-color: var(--bg-color);
   }
   
   .education-card {
     background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 4px;
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
   }
   
-  .education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .education-card .d-flex {
+    margin-bottom: 1rem !important;
+  }
+  
+  .education-card img {
+    max-height: 50px !important;
+  }
+  
+  .education-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .education-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .education-card h5 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .education-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .education-card ul {
+    font-size: 0.85rem;
+    padding-left: 1.2rem;
+  }
+  
+  .education-card li {
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+  }
+  
+  .education-card hr {
+    margin: 1rem 0;
+  }
+  
+  .education-card h3, .education-card h4, .education-card h5 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+  }
+  
+  .education-card p, .education-card li {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.75;
   }
   
   /* Publications Section */
   .publications-section {
-    padding: 100px 0;
+    padding: 60px 0;
+    background-color: var(--section-bg);
+  }
+  
+  .publications-section h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
   
   .publication-item {
     background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 25px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
   }
   
-  .publication-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .publication-ball {
+    width: 8px !important;
+    height: 8px !important;
+    margin-right: 10px !important;
+    margin-top: 6px !important;
   }
   
   .publication-ball {
@@ -257,8 +446,31 @@
   }
   
   .publication-title {
+    font-family: 'Lora', Georgia, serif;
     font-weight: 600;
+    font-size: 0.95rem;
     color: var(--text-color);
+    line-height: 1.4;
+  }
+  
+  .publication-item p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.4rem;
+  }
+  
+  .publication-item h5 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-item .btn-sm {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
   
   .publication-link {
@@ -301,41 +513,43 @@
     padding: 25px;
   }
 
-  /* Certifications Section */
-  .certifications-section {
-    padding: 100px 0;
-  }
-  
-  .certification-card {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 25px;
-    height: 100%;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .certification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
   
   /* Skills Section */
   .skills-section {
-    padding: 100px 0;
-    background-color: var(--darker-bg);
+    padding: 60px 0;
+    background-color: var(--bg-color);
+  }
+  
+  .skills-section p {
+    font-family: 'Lato', sans-serif;
   }
   
   .skill-card {
     background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 4px;
+    padding: 15px;
     height: 100%;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
   }
   
-  .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  .skill-icon {
+    font-size: 2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .skill-card h5 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-card p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 0;
   }
   
   .skill-icon {
@@ -346,7 +560,14 @@
   
   /* Contact Section */
   .contact-section {
-    padding: 100px 0;
+    padding: 60px 0;
+    background-color: var(--section-bg);
+  }
+  
+  .contact-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
   }
   
   .contact-icon {
@@ -359,82 +580,71 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: var(--card-bg);
+    background-color: var(--section-bg);
     border-radius: 50%;
     text-align: center;
     line-height: 50px;
     color: var(--text-color);
     font-size: 1.2rem;
     margin: 0 10px;
-    transition: all 0.3s;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
   }
   
   .social-link:hover {
     background-color: var(--primary-color);
     color: white;
-    transform: translateY(-5px);
+    border-color: var(--primary-color);
   }
   
   /* Footer */
   .footer {
-    background-color: var(--darker-bg);
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
     padding: 30px 0;
     border-top: 1px solid var(--border-color);
   }
   
-  /* Marquee */
-  .marquee-section {
-    background-color: var(--darker-bg);
-    padding: 15px 0;
-    overflow: hidden;
-    border-bottom: 1px solid var(--border-color);
+  .footer p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
   
-  .marquee-text {
-    white-space: nowrap;
-    display: inline-block;
-    animation: marquee 20s linear infinite;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: var(--primary-color);
-  }
-  
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-  }
   
   /* Buttons */
   .btn-primary {
+    font-family: 'Lato', sans-serif;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     padding: 10px 25px;
-    border-radius: 30px;
+    border-radius: 4px;
     font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
     transition: all 0.3s;
   }
   
   .btn-primary:hover {
-    background-color: #0a58ca;
-    border-color: #0a58ca;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
   }
   
   .btn-outline-primary {
+    font-family: 'Lato', sans-serif;
     color: var(--primary-color);
     border-color: var(--primary-color);
     padding: 8px 20px;
-    border-radius: 30px;
+    border-radius: 4px;
     font-weight: 500;
-    transition: all 0.3s;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
   }
   
   .btn-outline-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+    color: white;
   }
   
   /* Responsive adjustments */
@@ -461,38 +671,38 @@
 /* Contact Form Styles */
 .contact-form-card, .contact-info-card {
   background-color: var(--card-bg);
-  border-radius: 8px;
-  padding: 25px;
+  border-radius: 4px;
+  padding: 20px;
   height: 100%;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.contact-form-card:hover, .contact-info-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
 }
 
 .contact-form-card h4, .contact-info-card h4 {
+  font-family: 'Lora', Georgia, serif;
   color: var(--primary-color);
   font-size: 1.3rem;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .form-control {
-  background-color: #2a2a2a;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
   border: 1px solid var(--border-color);
   color: var(--text-color);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 10px 15px;
   margin-bottom: 15px;
-  transition: all 0.3s;
+  font-size: 0.95rem;
+  transition: all 0.2s;
 }
 
 .form-control:focus {
-  background-color: #2a2a2a;
+  background-color: var(--bg-color);
   border-color: var(--primary-color);
   color: var(--text-color);
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.15);
 }
 
 .form-control::placeholder {
@@ -536,15 +746,15 @@
 }
 
 .alert-success {
-  background-color: rgba(40, 167, 69, 0.2);
-  border: 1px solid rgba(40, 167, 69, 0.3);
-  color: #d4edda;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
 }
 
 .alert-danger {
-  background-color: rgba(220, 53, 69, 0.2);
-  border: 1px solid rgba(220, 53, 69, 0.3);
-  color: #f8d7da;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
 }
 
 /* Submit Button Loading State */
@@ -589,6 +799,12 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#research">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#news">News</a>
           </li>
           <li class="nav-item">
@@ -596,12 +812,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certifications">Certifications</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
@@ -614,15 +824,6 @@
     </div>
   </nav>
 
-  <!-- Marquee -->
-  <section class="marquee-section">
-    <div class="container">
-      <div class="marquee-text">
-        BSc (Hons) Data Science &nbsp;&nbsp; | &nbsp;&nbsp; Researcher in Artificial Intelligence and Data Science &nbsp;&nbsp; | &nbsp;&nbsp; AI Intern &nbsp;&nbsp;
-      </div>
-    </div>
-  </section>
-
   <!-- Hero Section -->
   <section id="home" class="hero-section">
     <div class="container">
@@ -630,10 +831,13 @@
         <div class="col-lg-6">
           <div class="hero-content">
             <h1>Heshan Chandeepa Pathmakumara</h1>
-            <p class="lead">Data Science Graduate & AI Researcher</p>
-            <p>I leverage data-driven insights to pioneer visionary solutions that contribute to a brighter future for humanity.</p>
-            <!-- <a href="#about" class="btn btn-primary mr-3">Learn More</a> -->
-            <a href="https://drive.google.com/file/d/15FnYMtzVCmPSdZa-roH52k6eQ3PtjFwa/view?usp=sharing" target="_blank" class="btn btn-outline-primary">Download CV</a>
+            <p class="lead">AI Researcher | Biomedical Machine Learning | Deep Learning</p>
+            <p class="mb-3">I am a researcher specializing in artificial intelligence and machine learning for biomedical applications. My research focuses on developing deep learning models for medical image analysis, disease prediction, and clinical decision support systems.</p>
+            <p class="mb-4"><strong>Research Areas:</strong> Medical Image Analysis | Explainable AI | Healthcare AI | Deep Learning | Computer Vision</p>
+            <div class="mt-4">
+              <a href="https://drive.google.com/file/d/15NRuDgFBZEG1YL4dlE8ChMw2c3PIlH9_/view?usp=sharing" target="_blank" class="btn btn-outline-primary mr-3">Download CV</a>
+              <a href="#publications" class="btn btn-primary">View Publications</a>
+            </div>
           </div>
         </div>
         <div class="col-lg-6 text-center">
@@ -648,14 +852,126 @@
     <div class="container">
       <h2 class="section-title text-center">About Me</h2>
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <p class="text-center">I am a dedicated and polychronic individual who ensures to accomplish any given task with dedication and in a timely manner. I am curious, a fast learner, and interested in the fields of Data Science, Machine Learning, and Artificial Intelligence.</p>
-          
-          <p class="text-center">I can manage risks and fulfill responsibilities effectively both as a team worker and individually. My career objective is to leverage data-driven insights to pioneer visionary solutions that contribute to a brighter future for humanity.</p>
+        <div class="col-lg-10 mx-auto">
+          <div class="row">
+            <div class="col-lg-8">
+              <h4 class="mb-4">Research Profile</h4>
+              <p>I am a dedicated researcher with a passion for advancing healthcare through artificial intelligence and machine learning. My research focuses on developing deep learning models for biomedical applications, including medical image analysis, disease prediction, and clinical decision support systems.</p>
+              
+              <p>I have co-authored multiple research papers published in international conferences (IEEE) and preprint platforms (medRxiv), with expertise in convolutional neural networks (CNNs), ensemble methods, and explainable AI. My work aims to bridge the gap between AI research and clinical practice, contributing to improved healthcare outcomes through data-driven solutions.</p>
+              
+              <h5 class="mt-4 mb-3">Research Methodology</h5>
+              <p>My research approach combines state-of-the-art deep learning architectures with rigorous experimental validation on real-world medical datasets. I specialize in developing interpretable AI systems that provide transparent decision-making processes for clinical applications, ensuring both high accuracy and clinical trustworthiness.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-dark border-primary" style="background-color: var(--card-bg) !important;">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">Quick Facts</h5>
+                  <p class="mb-2"><strong>Degree:</strong> BSc (Hons) Data Science</p>
+                  <p class="mb-2"><strong>Classification:</strong> Second Upper Class (2:1)</p>
+                  <p class="mb-2"><strong>Institution:</strong> University of Plymouth, UK</p>
+                  <p class="mb-2"><strong>Research Focus:</strong> Biomedical AI</p>
+                  <p class="mb-2"><strong>Publications:</strong> 4+ papers</p>
+                  <p class="mb-2"><strong>Status:</strong> Available for collaborations</p>
+                  <hr class="my-3">
+                  <h6 class="text-primary mb-2">Research Networks</h6>
+                  <div class="d-flex flex-wrap">
+                    <a href="https://scholar.google.com/citations?user=PotnUgwAAAAJ&hl=en" target="_blank" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                      <i class="fas fa-graduation-cap"></i> Google Scholar
+                    </a>
+                    <a href="https://ieeexplore.ieee.org/author/293762953451062" target="_blank" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                      <i class="fas fa-book"></i> IEEE Xplore
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Heshan-Pathmakumara" target="_blank" class="btn btn-sm btn-outline-primary mr-2 mb-2">
+                      <i class="fab fa-researchgate"></i> ResearchGate
+                    </a>
+                    <a href="https://orcid.org/0009-0000-5057-6102" target="_blank" class="btn btn-sm btn-outline-primary mb-2">
+                      <i class="fab fa-orcid"></i> ORCID
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <div class="text-center mt-5">
             <a href="#contact" class="btn btn-primary mr-3">Get In Touch</a>
-            <!-- <a href="#experience" class="btn btn-outline-primary">Experience</a> -->
+            <a href="#publications" class="btn btn-outline-primary">View Publications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests Section -->
+  <section id="research" class="publications-section">
+    <div class="container">
+      <h2 class="section-title text-center">Research Interests</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-brain fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Medical Image Analysis</h5>
+                <p class="mb-0">Developing deep learning models for analyzing medical images including CT scans, X-rays, and retinal fundus images for disease detection and diagnosis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-stethoscope fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Healthcare AI</h5>
+                <p class="mb-0">Building AI systems for clinical decision support, disease prediction, and healthcare analytics to improve patient outcomes and medical workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-eye fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Explainable AI</h5>
+                <p class="mb-0">Developing interpretable AI models using techniques like Grad-CAM visualization to make AI decisions transparent and clinically interpretable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-project-diagram fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Deep Learning</h5>
+                <p class="mb-0">Researching advanced deep learning architectures including CNNs, ensemble methods, and transfer learning for biomedical applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-microphone fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Biomedical Signal Processing</h5>
+                <p class="mb-0">Analyzing biomedical signals including lung sounds, ECG, and other physiological signals for disease classification and monitoring.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="publication-item h-100">
+            <div class="d-flex align-items-start mb-3">
+              <i class="fas fa-chart-line fa-2x text-primary mr-3"></i>
+              <div>
+                <h5>Predictive Analytics</h5>
+                <p class="mb-0">Developing machine learning models for predicting disease risk, treatment outcomes, and patient prognosis using clinical and imaging data.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -665,9 +981,23 @@
   <!-- News Section -->
   <section id="news" class="news-section">
     <div class="container">
-      <h2 class="section-title text-center">Latest News</h2>
+      <h2 class="section-title text-center">Research News & Updates</h2>
+      <p class="text-center text-muted mb-3" style="font-family: 'Lato', sans-serif; font-size: 0.9rem;">Recent research achievements, publications, and academic milestones</p>
       <div class="news-container">
         
+        <div class="news-item">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <p class="news-date">2025 December 11</p>
+              <h4>Graduated with BSc (Hons) in Data Science</h4>
+              <p>I am delighted to announce that I have successfully graduated from the University of Plymouth, UK, with a <strong>BSc (Hons) in Data Science</strong> with <strong>Second Upper Class (2:1)</strong> honours on December 11, 2025.</p>
+              <p>This marks a significant milestone in my academic journey, where I have developed expertise in data science, machine learning, and artificial intelligence, with a particular focus on biomedical applications and healthcare AI research.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/News/graduation.png" alt="Graduation" class="img-fluid rounded" style="max-height: 150px; width: auto;">
+            </div>
+          </div>
+        </div>
 
         <div class="news-item">
   <div class="row align-items-center">
@@ -679,7 +1009,7 @@
       <!-- <a href="https://doi.org/10.1109/MIUCC66482.2025.11196792" target="_blank" class="btn btn-outline-primary mt-2">View Publication</a> -->
     </div>
     <div class="col-md-4">
-      <img src="images/News/stroke_ct_research.png" alt="Stroke Diagnosis Research" class="img-fluid rounded">
+      <img src="images/News/stroke_ct_research.png" alt="Stroke Diagnosis Research" class="img-fluid rounded" style="max-height: 150px; width: auto;">
     </div>
   </div>
 </div>
@@ -695,7 +1025,7 @@
       <!-- <a href="https://www.medrxiv.org/content/10.1101/2024.12.24.24318468v1" target="_blank" class="btn btn-outline-primary mt-2">View Preprint</a> -->
     </div>
     <div class="col-md-4">
-      <img src="images/News/glaucoma_research.png" alt="Glaucoma Detection Research" class="img-fluid rounded">
+      <img src="images/News/glaucoma_research.png" alt="Glaucoma Detection Research" class="img-fluid rounded" style="max-height: 150px; width: auto;">
     </div>
   </div>
 </div>
@@ -710,7 +1040,7 @@
               <p>This research presents deep learning methods to improve lung sound classification for respiratory disease detection.</p>
             </div>
             <div class="col-md-4">
-              <img src="images/News/ieee2025.png" alt="IEEE Publication" class="img-fluid rounded">
+              <img src="images/News/ieee2025.png" alt="IEEE Publication" class="img-fluid rounded" style="max-height: 150px; width: auto;">
             </div>
           </div>
         </div>
@@ -725,7 +1055,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
               <p>It was a rewarding experience sharing my work on pulmonary disease detection using deep learning.</p>
             </div>
             <div class="col-md-4">
-              <img src="images/News/poster2025.png" alt="Poster Presentation" class="img-fluid rounded">
+              <img src="images/News/poster2025.png" alt="Poster Presentation" class="img-fluid rounded" style="max-height: 150px; width: auto;">
             </div>
           </div>
         </div>
@@ -738,7 +1068,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
               <p>I submitted my final year thesis titled <strong>"PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong> to the University of Plymouth, under the supervision of <strong>Mr. Gayan Perera</strong>, for my BSc (Hons) in Data Science.</p>
             </div>
             <div class="col-md-4 text-center">
-              <img src="images/News/thesis2025.jpg" alt="Thesis Submission" class="img-fluid rounded w-75">
+              <img src="images/News/thesis2025.jpg" alt="Thesis Submission" class="img-fluid rounded" style="max-height: 150px; width: auto;">
             </div>
           </div>
         </div>
@@ -752,7 +1082,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
               <p>Our research introduces deep learning techniques to enhance lung sound classification accuracy.</p>
             </div>
             <div class="col-md-4">
-              <img src="images/News/csecs2025.png" alt="CSECS 2025 Conference" class="img-fluid rounded">
+              <img src="images/News/csecs2025.png" alt="CSECS 2025 Conference" class="img-fluid rounded" style="max-height: 150px; width: auto;">
             </div>
           </div>
         </div>
@@ -766,7 +1096,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
               <p>This work explores how machine learning can tackle data imbalance challenges to improve stroke risk prediction.</p>
             </div>
             <div class="col-md-4">
-              <img src="images/News/IMG-20241101-WA0002.jpg" alt="ICACT 2024" class="img-fluid rounded">
+              <img src="images/News/IMG-20241101-WA0002.jpg" alt="ICACT 2024" class="img-fluid rounded" style="max-height: 150px; width: auto;">
             </div>
           </div>
         </div>
@@ -778,44 +1108,85 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
 <!-- Experience Section -->
 <section id="experience" class="experience-section">
   <div class="container">
-    <h2 class="section-title text-center">Experience</h2>
+    <h2 class="section-title text-center">Work Experience</h2>
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="experience-card">
-          <div class="d-flex align-items-center mb-4">
-            <img src="images/experience/covergo.png" alt="CoverGo Logo" class="img-fluid mr-4" style="max-height: 60px;">
+        
+        <!-- Software Engineer Intern at Insfra Technologies -->
+        <div class="experience-card mb-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="images/experience/insfra.jpg" alt="Insfra Technologies Logo" class="img-fluid mr-3" style="max-height: 45px;">
             <div>
-              <h3>AI Intern</h3>
-              <p class="text-muted mb-0">
-  <a href="https://covergo.com/" target="_blank" rel="noopener noreferrer" class="text-muted text-decoration-none">
-    CoverGo | Insurtech
-  </a>
-</p>
-              <p class="text-muted mb-0">Jul 2025 – October 2025</p>
+              <h3>Software Engineer (Intern)</h3>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">
+                <a href="https://www.insfra.co/" target="_blank" rel="noopener noreferrer" class="text-muted text-decoration-none">
+                  Insfra Technologies (Pvt) Ltd
+                </a>
+              </p>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Jan. 2026 – Present</p>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;"><small>Sri Lanka</small></p>
             </div>
           </div>
 
           <div class="experience-content">
-            <p class="lead mb-4">
-              Contributed to AI model quality assurance, LLM-based validation framework design, and WhatsApp–AI integration prototype for real-time QA automation at CoverGo.
-            </p>
+            <ul class="mb-0">
+              <li>Assisting in development activities and learning existing systems.</li>
+              <li>Working under the guidance of engineers to understand system design, coding standards, and development practices.</li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="skills-summary mt-4">
-              <h4 class="text-center mb-3">Key Skills</h4>
-              <div class="row text-center">
-                <div class="col-md-4 mb-3">
-                  <p class="mb-0"><strong>AI/ML:</strong> OCR Evaluation, LLM Validation</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <p class="mb-0"><strong>QA/Testing:</strong> Systematic Testing, Defect Analysis</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <p class="mb-0"><strong>Tools:</strong> Flask, REST APIs, Meta WhatsApp API</p>
-                </div>
-              </div>
+        <!-- AI Intern at CoverGo -->
+        <div class="experience-card mb-3">
+          <div class="d-flex align-items-center mb-3">
+            <img src="images/experience/covergo.png" alt="CoverGo Logo" class="img-fluid mr-3" style="max-height: 45px;">
+            <div>
+              <h3>AI Intern</h3>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">
+                <a href="https://covergo.com/" target="_blank" rel="noopener noreferrer" class="text-muted text-decoration-none">
+                  CoverGo | Insurtech
+                </a>
+              </p>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Jul 2025 – October 2025</p>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;"><small>Hong Kong</small></p>
             </div>
-          </div> <!-- experience-content -->
-        </div> <!-- experience-card -->
+          </div>
+
+          <div class="experience-content">
+            <ul class="mb-0">
+              <li>Contributed to AI model quality assurance, LLM-based validation framework design, and WhatsApp–AI integration prototype for real-time QA automation.</li>
+              <li>Worked on OCR evaluation, LLM validation, systematic testing, and defect analysis.</li>
+              <li>Developed prototypes using Flask, REST APIs, and Meta WhatsApp API.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Undergraduate Research Assistant at NSBM -->
+        <div class="experience-card">
+          <div class="d-flex align-items-center mb-3">
+            <img src="images/experience/nsbm.png" alt="NSBM Green University Logo" class="img-fluid mr-3" style="max-height: 45px;">
+            <div>
+              <h3>Undergraduate Research Assistant</h3>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">
+                <a href="https://www.nsbm.ac.lk/" target="_blank" rel="noopener noreferrer" class="text-muted text-decoration-none">
+                  NSBM Green University
+                </a>
+              </p>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Supervisor: <a href="https://lk.linkedin.com/in/gayan-perera-39876a181" target="_blank" class="publication-link">Mr. Gayan Perera</a></p>
+              <p class="text-muted mb-0" style="font-size: 0.85rem;">Dec. 2024 – Dec. 2025</p>
+              <p class="text-muted mb-0" style="font-size: 0.8rem;"><small>Sri Lanka</small></p>
+            </div>
+          </div>
+
+          <div class="experience-content">
+            <ul class="mb-0">
+              <li>Conducted research in AI/ML for biomedical applications including lung sound classification, stroke prediction, and medical image analysis.</li>
+              <li>Developed and evaluated ML and deep learning models (CNNs, SVM, Random Forest, XGBoost) on real-world datasets.</li>
+              <li>Co-authored multiple research papers, serving as first author on several submissions to international conferences and preprint platforms.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -830,17 +1201,28 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="education-card">
-            <div class="d-flex align-items-center mb-4">
-              <img src="images/education/plymouth.png" alt="University of Plymouth Logo" class="img-fluid mr-4" style="max-height: 60px;">
+            <div class="d-flex align-items-center mb-3">
+              <img src="images/education/plymouth.png" alt="University of Plymouth Logo" class="img-fluid mr-3" style="max-height: 50px;">
               <div>
                 <h3>University of Plymouth, UK</h3>
-                <p class="text-muted mb-0">September 2022 - September 2025</p>
+                <p class="text-muted mb-0" style="font-size: 0.9rem;">September 2022 - September 2025</p>
               </div>
             </div>
             <h4>BSc (Hons) in Data Science</h4>
-            <p><strong>Undergraduate</strong></p>
-            <p><em>Major:</em> Data Science</p>
-            <p><em>Supervisor:</em> <a href="https://www.linkedin.com/in/gayan-perera-39876a181" target="_blank" class="publication-link">Mr. Gayan Perera</a></p>
+            <p style="margin-bottom: 0.4rem;"><strong>Degree:</strong> Bachelor of Science with Honours</p>
+            <p style="margin-bottom: 0.4rem;"><strong>Classification:</strong> Second Upper Class (2:1)</p>
+            <p style="margin-bottom: 0.4rem;"><strong>Major:</strong> Data Science</p>
+            <p style="margin-bottom: 0.4rem;"><strong>Research Supervisor:</strong> <a href="https://www.linkedin.com/in/gayan-perera-39876a181" target="_blank" class="publication-link">Mr. Gayan Perera</a></p>
+            <hr class="my-2">
+            <h5 class="mb-2" style="font-size: 1rem;">Research Work</h5>
+            <p style="margin-bottom: 0.5rem;"><strong>Thesis Title:</strong> "PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</p>
+            <p class="mb-2" style="font-size: 0.85rem;">Conducted comprehensive research on deep learning techniques for lung sound classification, developing binary, multi-class, and ensemble approaches for respiratory disease detection.</p>
+            <p class="mb-1" style="font-size: 0.9rem;"><strong>Key Achievements:</strong></p>
+            <ul class="mb-0" style="font-size: 0.85rem;">
+              <li>Published research findings in IEEE Xplore and international conferences</li>
+              <li>Developed multiple deep learning models achieving high accuracy on medical datasets</li>
+              <li>Co-authored 4+ research papers during undergraduate studies</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -851,65 +1233,72 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
   <section id="publications" class="publications-section">
     <div class="container">
       <h2 class="section-title text-center">Publications</h2>
+      <p class="text-center text-muted mb-3" style="font-family: 'Lato', sans-serif; font-size: 0.9rem;">Peer-reviewed research papers and preprints in biomedical AI and machine learning</p>
       
-      <div class="mb-5">
-        <h3 class="mb-4">2025</h3>
-
-
-        <div class="publication-item">
-  <p>
-    <span class="publication-ball"></span> 
-    <span class="publication-title">"A CNN Approach for Accurate Stroke Diagnosis Using Brain Computed Tomography Imaging"</span>
-    <br>
-    <small class="text-muted">Authors: Heshan Chandeepa Pathmakumara, Gayan Perera</small><br>
-    <small class="text-muted">Conference: IEEE 2025 MIUCC Conference Proceedings</small><br>
-    <a href="https://doi.org/10.1109/MIUCC66482.2025.11196792" target="_blank" class="publication-link">
-      <i class="fas fa-external-link-alt mr-1"></i> View Publication
-    </a>
-  </p>
-</div>
-
+      <div class="mb-4">
+        <h3 class="mb-3 text-primary" style="font-size: 1.3rem;">2025</h3>
 
         <div class="publication-item">
-    <p>
-      <span class="publication-ball"></span> 
-      <span class="publication-title">"Explainable Deep Learning for Glaucoma Detection: A DenseNet121-Based Classification with Grad-CAM Visualization"</span>
-      <br>
-      <small class="text-muted">Authors: Heshan Chandeepa Pathmakumara, Gayan Perera</small><br>
-      <small class="text-muted">Preprint: medRxiv</small><br>
-      <a href="https://www.medrxiv.org/content/10.1101/2025.10.08.25337634v1" target="_blank" class="publication-link">
-        <i class="fas fa-external-link-alt mr-1"></i> View Publication
-      </a>
-    </p>
-  </div>
+          <div class="d-flex align-items-start">
+            <span class="publication-ball mt-2"></span>
+            <div class="flex-grow-1">
+              <h5 class="publication-title mb-1">"A CNN Approach for Accurate Stroke Diagnosis Using Brain Computed Tomography Imaging"</h5>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Authors:</strong> Heshan Chandeepa Pathmakumara, Gayan Perera</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Venue:</strong> IEEE 2025 MIUCC Conference Proceedings</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>DOI:</strong> <a href="https://doi.org/10.1109/MIUCC66482.2025.11196792" target="_blank" class="publication-link">10.1109/MIUCC66482.2025.11196792</a></p>
+              <a href="https://doi.org/10.1109/MIUCC66482.2025.11196792" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-external-link-alt mr-1"></i> View Publication
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div class="publication-item">
-          <p>
-            <span class="publication-ball"></span> 
-            <span class="publication-title">"Advanced Deep Learning Techniques for Lung Sound Classification: Binary, Multi-Class, and Ensemble Approach"</span>
-            <br>
-            <small class="text-muted">Authors: Heshan Chandeepa Pathmakumara, Gayan Perera</small><br>
-            <small class="text-muted">Conference: 7th International Conference on Software Engineering and Computer Science (CSECS 2025), Xi'an Jiaotong-Liverpool University, China</small><br>
-            <a href="https://ieeexplore.ieee.org/document/11009363" target="_blank" class="publication-link">
-              <i class="fas fa-external-link-alt mr-1"></i> View Publication
-            </a>
-          </p>
+          <div class="d-flex align-items-start">
+            <span class="publication-ball mt-2"></span>
+            <div class="flex-grow-1">
+              <h5 class="publication-title mb-1">"Explainable Deep Learning for Glaucoma Detection: A DenseNet121-Based Classification with Grad-CAM Visualization"</h5>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Authors:</strong> Heshan Chandeepa Pathmakumara, Gayan Perera</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Venue:</strong> medRxiv (Preprint)</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>DOI:</strong> <a href="https://www.medrxiv.org/content/10.1101/2025.10.08.25337634v1" target="_blank" class="publication-link">10.1101/2025.10.08.25337634v1</a></p>
+              <a href="https://www.medrxiv.org/content/10.1101/2025.10.08.25337634v1" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-external-link-alt mr-1"></i> View Preprint
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <div class="d-flex align-items-start">
+            <span class="publication-ball mt-2"></span>
+            <div class="flex-grow-1">
+              <h5 class="publication-title mb-1">"Advanced Deep Learning Techniques for Lung Sound Classification: Binary, Multi-Class, and Ensemble Approach"</h5>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Authors:</strong> Heshan Chandeepa Pathmakumara, Gayan Perera</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Venue:</strong> 7th International Conference on Software Engineering and Computer Science (CSECS 2025), Xi'an Jiaotong-Liverpool University, China</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>IEEE Xplore:</strong> <a href="https://ieeexplore.ieee.org/document/11009363" target="_blank" class="publication-link">Document 11009363</a></p>
+              <a href="https://ieeexplore.ieee.org/document/11009363" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-external-link-alt mr-1"></i> View Publication
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       
       <div>
-        <h3 class="mb-4">2024</h3>
+        <h3 class="mb-3 text-primary" style="font-size: 1.3rem;">2024</h3>
         <div class="publication-item">
-          <p>
-            <span class="publication-ball"></span> 
-            <span class="publication-title">"Machine Learning Techniques for Predicting Brain Stroke Risk: Addressing Data Imbalance"</span>
-            <br>
-            <small class="text-muted">Authors: Heshan Chandeepa Pathmakumara, R W K T Rajapaksha</small><br>
-            <small class="text-muted">Conference: International Conference on Advanced Computing Technologies (ICACT 2024)</small><br>
-            <a href="https://icact.nsbm.ac.lk/wp-content/uploads/2024/10/ICACT-Conference-Proceedings-2024-E-Book.pdf#page=40" target="_blank" class="publication-link">
-              <i class="fas fa-external-link-alt mr-1"></i> View Publication
-            </a>
-          </p>
+          <div class="d-flex align-items-start">
+            <span class="publication-ball mt-2"></span>
+            <div class="flex-grow-1">
+              <h5 class="publication-title mb-1">"Machine Learning Techniques for Predicting Brain Stroke Risk: Addressing Data Imbalance"</h5>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Authors:</strong> Heshan Chandeepa Pathmakumara, R W K T Rajapaksha</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Venue:</strong> International Conference on Advanced Computing Technologies (ICACT 2024)</p>
+              <p class="mb-1" style="font-size: 0.85rem;"><strong>Proceedings:</strong> <a href="https://icact.nsbm.ac.lk/wp-content/uploads/2024/10/ICACT-Conference-Proceedings-2024-E-Book.pdf#page=40" target="_blank" class="publication-link">ICACT 2024 Proceedings</a></p>
+              <a href="https://icact.nsbm.ac.lk/wp-content/uploads/2024/10/ICACT-Conference-Proceedings-2024-E-Book.pdf#page=40" target="_blank" class="btn btn-sm btn-outline-primary">
+                <i class="fas fa-external-link-alt mr-1"></i> View Publication
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -991,121 +1380,24 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
     </div>
   </section> -->
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications-section">
-    <div class="container">
-      <h2 class="section-title text-center">Certifications</h2>
-      <div class="row">
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <h5>Statistics for Data Science with Python</h5>
-            <p>Learned Python for statistical tests, hypothesis testing, descriptive statistics, and visualizations.</p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/RTBC6ZQSDTYU" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-code-branch"></i>
-            </div>
-            <h5>Agile Software Development: Scrum for Developer</h5>
-            <p>LinkedIn Learning Certificate in Agile Software Development: Scrum for Developers.</p>
-            <a href="https://www.linkedin.com/learning/certificates/21fbe3e79a6e2aebb3eb36ee6421af4be9f24075b59344a18b6fa706ffef62e8?u=26140778" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <h5>Cloud Skills Challenge: Azure Fundamentals</h5>
-            <p>Completed Cloud Skills Challenge: Azure Fundamentals with Microsoft Learn Student Ambassadors.</p>
-            <a href="https://drive.google.com/file/d/154PfyUw3Wh5V0q2Z1cDZ7pVWmfqg5DEY/view?usp=sharing" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-robot"></i>
-            </div>
-            <h5>Supervised Machine Learning: Regression and Classification</h5>
-            <p>Learned to build machine learning models in Python with NumPy and scikit-learn.</p>
-            <a href="https://www.coursera.org/account/accomplishments/certificate/4MC7R7KSXKYW" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h5>Learning SQL Programming</h5>
-            <p>Earned LinkedIn Learning Certificate in Learning SQL Programming.</p>
-            <a href="https://www.linkedin.com/learning/certificates/a20a7bb00722b776c5065c877116c0f9271424d22cb3e41773a80955a4f30524?u=26140778" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-flask"></i>
-            </div>
-            <h5>Introduction to Data Science</h5>
-            <p>Cisco badge recipient completed Introduction to Data Science.</p>
-            <a href="https://www.credly.com/badges/6198be80-2d42-4e18-a2df-697dec0c6658/linked_in_profile" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h5>AI/ML Engineer - Stage 1</h5>
-            <p>Completed AI/ML Engineer - Stage 1 course, covering AI/ML fundamentals.</p>
-            <a href="https://code.sliit.org/certificates/mo7jznppa9" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="certification-card">
-            <div class="skill-icon">
-              <i class="fab fa-python"></i>
-            </div>
-            <h5>Python for Beginners</h5>
-            <p>Completed "Programming in Python - 1: Python for Beginners," covering basics and essentials.</p>
-            <a href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php" class="btn btn-outline-primary">View Certificate</a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
   <!-- Skills Section -->
   <section id="skills" class="skills-section">
     <div class="container">
-      <h2 class="section-title text-center">Skills</h2>
+      <h2 class="section-title text-center">Research & Technical Skills</h2>
+      <p class="text-center text-muted mb-3" style="font-family: 'Lato', sans-serif; font-size: 0.9rem;">Technical expertise and research methodologies</p>
       <div class="row">
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fab fa-python"></i>
             </div>
             <h5>Python</h5>
-            <p>Proficient in Python for data science, utilizing libraries like NumPy, pandas, and scikit-learn for data analysis, machine learning, and visualization.</p>
+            <p>Proficient in Python for research and data science, utilizing libraries like NumPy, pandas, scikit-learn, TensorFlow, Keras, and PyTorch for deep learning research and data analysis.</p>
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-chart-line"></i>
@@ -1115,7 +1407,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-database"></i>
@@ -1125,7 +1417,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-chart-bar"></i>
@@ -1135,27 +1427,27 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-robot"></i>
             </div>
             <h5>Machine Learning</h5>
-            <p>Experienced in machine learning techniques including supervised and unsupervised learning, with a focus on implementing models for predictive analytics.</p>
+            <p>Experienced in ML techniques including supervised learning (SVM, Random Forest, XGBoost), ensemble methods, and handling imbalanced datasets for biomedical prediction tasks.</p>
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-brain"></i>
             </div>
             <h5>Deep Learning</h5>
-            <p>Proficient in deep learning frameworks like TensorFlow and Keras for building and training neural networks, including CNNs and RNNs, for advanced AI applications.</p>
+            <p>Expertise in deep learning frameworks (TensorFlow, Keras, PyTorch) for building and training CNNs, transfer learning, ensemble methods, and explainable AI models for biomedical applications.</p>
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-code"></i>
@@ -1165,13 +1457,13 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
           </div>
         </div>
         
-        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-3">
           <div class="skill-card">
             <div class="skill-icon">
               <i class="fas fa-comments"></i>
             </div>
-            <h5>Communication</h5>
-            <p>Strong communication skills in conveying complex data insights clearly, collaborating effectively with teams, and presenting findings to diverse audiences.</p>
+            <h5>Research Communication</h5>
+            <p>Strong skills in academic writing, research presentation, and communicating complex AI/ML concepts to both technical and non-technical audiences, including conference presentations.</p>
           </div>
         </div>
         
@@ -1184,7 +1476,7 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
     <h2 class="section-title text-center">Contact Me</h2>
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <p class="text-center mb-4">Feel free to reach out for collaborations, research opportunities, or just to connect!</p>
+        <p class="text-center mb-4">I welcome collaborations, research opportunities, and discussions about biomedical AI, deep learning, and healthcare applications. Feel free to reach out!</p>
         
         <div class="row">
           <!-- Contact Form -->
@@ -1218,8 +1510,8 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
           <!-- Contact Info -->
           <div class="col-lg-6">
             <div class="contact-info-card">
-              <h4 class="mb-3">Get in touch</h4>
-              <p class="mb-4">I'm available on professional and research networks. Feel free to connect below.</p>
+              <h4 class="mb-3">Research Networks</h4>
+              <p class="mb-4">Connect with me on academic and professional networks for research collaborations and discussions.</p>
               
               <div class="social-links mt-4">
                 <p class="mb-3"><strong>Connect with me:</strong></p>
@@ -1257,7 +1549,8 @@ PulmoSense AI: A Deep Learning Based Lung Sound Classification System"</strong>,
 <!-- Footer -->
 <footer class="footer">
   <div class="container text-center">
-    <p class="mb-2">© 2025 Heshan Chandeepa Pathmakumara. All Rights Reserved.</p>
+    <p class="mb-2">© 2026 Heshan Chandeepa Pathmakumara. All Rights Reserved.</p>
+    <p class="mb-0 text-muted"><small>Research Portfolio | AI Researcher in Biomedical Applications</small></p>
   </div>
 </footer>
 
